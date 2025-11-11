@@ -2,9 +2,7 @@ from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
 
 router = APIRouter()
-
 tasks = []
-
 class Task(BaseModel):
     id: int
     title: str
